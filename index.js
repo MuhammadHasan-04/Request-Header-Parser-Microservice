@@ -18,7 +18,7 @@ app.get('/api/whoami', (req, res) => {
   const ip = req.ip || req.headers['x-forwarded-for'] || 'IP not found';
   const language = req.headers['accept-language'] || 'Language not found';
   const software = req.headers['user-agent'] || 'Software not found';
-
+  console.log("test")
   res.json({
     ipaddress: ip,
     language: language,
